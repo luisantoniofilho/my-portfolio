@@ -135,6 +135,8 @@ export const Header = () => {
                   />
                 </>
               )}
+              {/* 
+              DISABLE BLOG SECTION ON HEADER
               {routes["/blog"] && (
                 <>
                   <ToggleButton
@@ -151,7 +153,7 @@ export const Header = () => {
                     selected={pathname.startsWith("/blog")}
                   />
                 </>
-              )}
+              )} */}
               {routes["/gallery"] && (
                 <>
                   <ToggleButton
