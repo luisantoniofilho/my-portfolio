@@ -91,7 +91,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -135,17 +135,43 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company:
+          "LightLife v2 - Plataforma de Planejamento Nutricional (Next.js + TypeScript + Firebase)",
+        timeframe: "2025",
+        role: "Desenvolvedor front-end",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Desenvolvi a nova versão da aplicação com Next.js 15 (App Router) e
+            TypeScript, utilizando Server/Client Components para otimizar SSR,
+            SSG e navegação híbrida.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Implementei autenticação OAuth com Google via NextAuth.js, com
+            proteção de rotas e sessões seguras.
+          </>,
+          <>
+            Modelei e validei formulários com Zod, oferecendo tipagem estática e
+            feedback de erro em tempo real.
+          </>,
+          <>
+            Integrei a API Spoonacular para gerar automaticamente planos
+            alimentares personalizados, usando Server Actions e redirecionamento
+            dinâmico.
+          </>,
+          <>
+            Implementei autenticação OAuth com Google via NextAuth.js, com
+            proteção de rotas e sessões seguras.Renderizei gráficos interativos
+            com Recharts, exibindo a distribuição percentual e calórica de
+            macronutrientes com labels e legendas customizadas.
+          </>,
+          <>
+            Persisti os macros do usuário no Firebase Firestore, com ações
+            assíncronas e carregamento otimizado via hooks.
+          </>,
+          <>
+            Estilizei toda a interface com Tailwind CSS, aplicando design
+            mobile-first, componentização reutilizável e integração com CI/CD
+            via Vercel para deploy contínuo.
           </>,
         ],
         images: [],
