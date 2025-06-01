@@ -60,20 +60,16 @@ const home = {
     display: true,
     title: (
       <>
-        Recent project: <strong className="ml-4">Once UI</strong>
+        Projeto mais recente: <strong className="ml-4">KAYA</strong>
       </>
     ),
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        icon={false}
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Sou Luis Antonio, desenvolvedor front-end focado em React e Next.js.
+      Entrego interfaces rápidas, responsivas e construídas com atenção à
+      performance e qualidade.
     </>
   ),
 };
@@ -81,7 +77,7 @@ const home = {
 const about = {
   path: "/about",
   label: "Sobre mim",
-  title: `About – ${person.name}`,
+  title: `Sobre – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -96,13 +92,13 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introdução",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        Sou Luis Antonio, desenvolvedor front-end especializado em React e
+        Next.js, focado em transformar desafios complexos em experiências
+        digitais. Crio interfaces responsivas, otimizadas para alta performance
+        e construídas com boas práticas de código limpo e arquitetura eficiente.
       </>
     ),
   },
