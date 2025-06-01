@@ -108,20 +108,41 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experiência",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Kaya",
+        timeframe: "2025 - Present",
+        role: "Desenvolvedor front-end",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            Desenvolvi uma aplicação web fullstack com Next.js 15 (App Router),
+            TypeScript, MongoDB Atlas e NextAuth, permitindo que pessoas e
+            empresas anunciem produtos para venda ou doação.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            Modelei e integrei dados com Server Actions e MongoDB Adapter,
+            estruturando SSR (Server-side Rendering) e ISR (Incremental Static
+            Regeneration) via generateStaticParams e revalidate para otimização
+            de performance e SEO.
+          </>,
+          <>
+            Implementei autenticação com login social (Google) e futura
+            distinção entre usuários por CPF e CNPJ, com segurança e
+            escalabilidade.
+          </>,
+          <>
+            Apliquei validações com Zod e form handling via FormData API,
+            garantindo robustez e consistência nos dados
+          </>,
+          <>
+            Estilizei a interface com Tailwind CSS, garantindo responsividade,
+            acessibilidade e experiência mobile-first.
+          </>,
+          <>
+            Destaques técnicos: SPA, SSR, ISR, rotas dinâmicas, componentização
+            reutilizável, CI/CD com Vercel, controle de cache e boas práticas de
+            arquitetura com pastas modulares.
           </>,
         ],
         images: [
@@ -241,7 +262,7 @@ const about = {
 const work = {
   path: "/work",
   label: "Experiência",
-  title: `Projects – ${person.name}`,
+  title: `Projects - ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
