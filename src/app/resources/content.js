@@ -8,9 +8,9 @@ const person = {
   },
   role: "Design Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "luissantosfilho2014@gmail.com",
+  location: "America/Sao_Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Português", "Inglês"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -35,7 +35,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "http://linkedin.com/in/luis-antonio-497180299/",
   },
   {
     name: "X",
