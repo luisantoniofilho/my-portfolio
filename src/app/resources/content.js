@@ -180,15 +180,17 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Educação",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Fatec Zona Sul",
+        description: (
+          <>Curso superior, Análise e Desenvolvimento de Sistemas.</>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Etec Taboão da Serra",
+        description: <>Curso técnico, Desenvolvimento de Sistemas.</>,
       },
     ],
   },
