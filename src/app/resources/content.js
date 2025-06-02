@@ -1,25 +1,25 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Luis",
+  lastName: "Antonio",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Desenvolvedor Front-end",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "luissantosfilho2014@gmail.com",
+  location: "America/Sao_Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Português", "Inglês"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -30,12 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/luisantoniofilho",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "http://linkedin.com/in/luis-antonio-497180299/",
   },
   {
     name: "X",
@@ -51,28 +51,33 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/avatar.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Performance e experiência caminhando juntas.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: (
+      <>
+        Projeto mais recente: <strong className="ml-4">KAYA</strong>
+      </>
+    ),
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Sou Luis Antonio, desenvolvedor front-end focado em React e Next.js.
+      Entrego interfaces rápidas, responsivas e construídas com atenção à
+      performance e qualidade.
     </>
   ),
 };
 
 const about = {
   path: "/about",
-  label: "About",
-  title: `About – ${person.name}`,
+  label: "Sobre mim",
+  title: `Sobre – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -82,36 +87,58 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introdução",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Sou Luis Antonio, desenvolvedor front-end especializado em React e
+        Next.js, focado em transformar desafios complexos em experiências
+        digitais. Crio interfaces responsivas, otimizadas para alta performance
+        e construídas com boas práticas de código limpo e arquitetura eficiente.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experiência",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Kaya",
+        timeframe: "2025 - Present",
+        role: "Desenvolvedor front-end",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Desenvolvi uma aplicação web fullstack com Next.js 15 (App Router),
+            TypeScript, MongoDB Atlas e NextAuth, permitindo que pessoas e
+            empresas anunciem produtos para venda ou doação.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Modelei e integrei dados com Server Actions e MongoDB Adapter,
+            estruturando SSR (Server-side Rendering) e ISR (Incremental Static
+            Regeneration) via generateStaticParams e revalidate para otimização
+            de performance e SEO.
+          </>,
+          <>
+            Implementei autenticação com login social (Google) e futura
+            distinção entre usuários por CPF e CNPJ, com segurança e
+            escalabilidade.
+          </>,
+          <>
+            Apliquei validações com Zod e form handling via FormData API,
+            garantindo robustez e consistência nos dados
+          </>,
+          <>
+            Estilizei a interface com Tailwind CSS, garantindo responsividade,
+            acessibilidade e experiência mobile-first.
+          </>,
+          <>
+            Destaques técnicos: SPA, SSR, ISR, rotas dinâmicas, componentização
+            reutilizável, CI/CD com Vercel, controle de cache e boas práticas de
+            arquitetura com pastas modulares.
           </>,
         ],
         images: [
@@ -125,17 +152,43 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company:
+          "LightLife v2 - Plataforma de Planejamento Nutricional (Next.js + TypeScript + Firebase)",
+        timeframe: "2025",
+        role: "Desenvolvedor front-end",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Desenvolvi a nova versão da aplicação com Next.js 15 (App Router) e
+            TypeScript, utilizando Server/Client Components para otimizar SSR,
+            SSG e navegação híbrida.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Implementei autenticação OAuth com Google via NextAuth.js, com
+            proteção de rotas e sessões seguras.
+          </>,
+          <>
+            Modelei e validei formulários com Zod, oferecendo tipagem estática e
+            feedback de erro em tempo real.
+          </>,
+          <>
+            Integrei a API Spoonacular para gerar automaticamente planos
+            alimentares personalizados, usando Server Actions e redirecionamento
+            dinâmico.
+          </>,
+          <>
+            Implementei autenticação OAuth com Google via NextAuth.js, com
+            proteção de rotas e sessões seguras.Renderizei gráficos interativos
+            com Recharts, exibindo a distribuição percentual e calórica de
+            macronutrientes com labels e legendas customizadas.
+          </>,
+          <>
+            Persisti os macros do usuário no Firebase Firestore, com ações
+            assíncronas e carregamento otimizado via hooks.
+          </>,
+          <>
+            Estilizei toda a interface com Tailwind CSS, aplicando design
+            mobile-first, componentização reutilizável e integração com CI/CD
+            via Vercel para deploy contínuo.
           </>,
         ],
         images: [],
@@ -144,15 +197,17 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Educação",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Fatec Zona Sul",
+        description: (
+          <>Curso superior, Análise e Desenvolvimento de Sistemas.</>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Etec Taboão da Serra",
+        description: <>Curso técnico, Desenvolvimento de Sistemas.</>,
       },
     ],
   },
@@ -162,7 +217,9 @@ const about = {
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        description: (
+          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -181,7 +238,9 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: (
+          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -196,6 +255,15 @@ const about = {
   },
 };
 
+const work = {
+  path: "/work",
+  label: "Experiência",
+  title: `Projects - ${person.name}`,
+  description: `Design and dev projects by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/blog/posts
+  // All projects will be listed on the /home and /work routes
+};
+
 const blog = {
   path: "/blog",
   label: "Blog",
@@ -203,15 +271,6 @@ const blog = {
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
-};
-
-const work = {
-  path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
